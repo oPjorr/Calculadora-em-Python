@@ -4,7 +4,8 @@ while operacao != 2:
     operacao = int(input("Dentre as funcionalidades, o que deseja que a calculadora faça?"
                          "\n 1. Verificador de pares"
                          "\n 2. Verificador de peso ideal"
-                         "\n 3. Desligar a calculadora"))
+                         "\n 3. Produto de dois números"
+                         "\n 4. Desligar a calculadora"))
 
 # Verificador de números pares
     if operacao == 1:
@@ -34,6 +35,11 @@ while operacao != 2:
             print("Essa pessoa está abaixo de seu peso ideal!")
 
     elif operacao == 3:
+        num1 = float(input("Informe o primeiro número: "))
+        num2 = float(input("Informe o segundo número: "))
+        print("o produto de", num1, "e", num2, "é", num1*num2)
+
+    elif operacao == 4:
         print("Desligando a calculadora... Obrig... a.d...0....")
     else:
         print("Escolha um número válido! ")
