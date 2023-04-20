@@ -1,11 +1,12 @@
 operacao = 0
 
 while operacao != 2:
-    operacao = int(input("Dentre as funcionalidades, o que deseja que a calculadora faça?"
+    operacao = int(input("\nDentre as funcionalidades, o que você deseja que a calculadora faça?\n"
                          "\n 1. Verificador de pares"
                          "\n 2. Verificador de peso ideal"
                          "\n 3. Produto de dois números"
-                         "\n 4. Desligar a calculadora"))
+                         "\n 4. Fatorial de um número"
+                         "\n 5. Desligar a calculadora\n\n"))
 
 # Verificador de números pares
     if operacao == 1:
@@ -40,6 +41,15 @@ while operacao != 2:
         print("o produto de", num1, "e", num2, "é", num1*num2)
 
     elif operacao == 4:
+        n = int(input("Digite o número que deseja calcular o fatorial: "))
+        i = 1
+        fat = 1
+        while n >= i:
+            fat *= i 
+            i += 1
+        print("O fatorial do número", n, "é de: ", fat)
+
+    elif operacao == 5:
         print("Desligando a calculadora... Obrig... a.d...0....")
     else:
         print("Escolha um número válido! ")
