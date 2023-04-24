@@ -6,7 +6,8 @@ while operacao != 2:
                          "\n 2. Verificador de peso ideal"
                          "\n 3. Produto de dois números"
                          "\n 4. Fatorial de um número"
-                         "\n 5. Desligar a calculadora\n\n"))
+                         "\n 5. Converter ºF em ºC"
+                         "\n 6. Desligar a calculadora\n\n"))
 
 # Verificador de números pares
     if operacao == 1:
@@ -50,6 +51,14 @@ while operacao != 2:
         print("O fatorial do número", n, "é de: ", fat)
 
     elif operacao == 5:
+        def converter(F):
+            C = (F - 32) * 5/9
+            return C
+  
+        F = int(input("Digite a temperatura em Fahrenheit: "))
+        print(converter(F))
+
+    elif operacao == 6:
         print("Desligando a calculadora... Obrig... a.d...0....")
     else:
         print("Escolha um número válido! ")
